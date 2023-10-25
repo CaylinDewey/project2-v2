@@ -24,7 +24,7 @@ function userWins(userChoice, randomChoice) {
   runUserScore++;
   userScoreSpan.innerHTML = userScore;
   randomScoreSpan.innerHTML = randomScore;
-  resultP.innerHTML = `User chooses: <br> ${(userChoice)} Universe chooses:  <br> ${(randomChoice)} <br><br> You win!!!`;
+  resultP.innerHTML = `User chooses: <br> ${(userChoice)} <br><br>Universe chooses:  <br> ${(randomChoice)} <br><br> You win!!!`;
 }
 
 /** Machine Wins */
@@ -33,7 +33,7 @@ function uniWins(userChoice, randomChoice) {
   runRandomScore++;
   userScoreSpan.innerHTML = userScore;
   randomScoreSpan.innerHTML = randomScore;
-  resultP.innerHTML = `User chooses: <br> ${(userChoice)} Universe chooses:  <br> ${(randomChoice)}<br><br> You lose!`;
+  resultP.innerHTML = `User chooses: <br> ${(userChoice)} <br><br>Universe chooses:  <br> ${(randomChoice)}<br><br> You lose!`;
 }
 
 /** Draw */
@@ -44,7 +44,7 @@ function draw(userChoice, randomChoice) {
   runUserScore++;
   userScoreSpan.innerHTML = userScore;
   randomScoreSpan.innerHTML = randomScore;
-  resultP.innerHTML = `User chooses: <br> ${(userChoice)} Universe chooses:  <br> ${(randomChoice)} <br><br> It's a draw, have another round!`;
+  resultP.innerHTML = `User chooses: <br> ${(userChoice)} <br><br>Universe chooses:  <br> ${(randomChoice)} <br><br> It's a draw, have another round!`;
 }
 
 /** Game */
