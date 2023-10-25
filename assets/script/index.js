@@ -1,216 +1,166 @@
-/* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Oswald:wght@200;300;400;500;600;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+const rockDiv = document.getElementById("rock");
+const paperDiv = document.getElementById("paper");
+const scissorsDiv = document.getElementById("scissors");
+const spockDiv = document.getElementById("spock");
+const lizardDiv = document.getElementById("lizard");
+const symbolP = document.querySelector(".symbol > p");
+const resultP = document.querySelector(".result > p");
+const userScoreSpan = document.getElementById("scoreUser");
+const randomScoreSpan = document.getElementById("scoreUni");
+let userScore = 0;
+let randomScore = 0;
+let runUserScore = 0;
+let runRandomScore = 0;
 
-/* General Styling */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/**  randomNumber holds getrandomChoice */
+function getrandomChoice() {
+  const options = ['rock', 'paper', 'scissors', 'spock', 'lizard'];
+  const randomNumber = Math.floor(Math.random() * 5);
+  return options[randomNumber];
 }
 
-/** Header **/
-header {
-    padding: 15px;
-    margin: 10px;
-    background: white;
-    text-align: center;
+/** User Wins */
+function userWins(userChoice, randomChoice) {
+  userScore++;
+  runUserScore++;
+  userScoreSpan.innerHTML = userScore;
+  randomScoreSpan.innerHTML = randomScore;
+  resultP.innerHTML = `Universe chooses:  <br><br> ${(randomChoice)} <br><br> You win!!!`;
 }
 
-h1, {
-    color: black;
-    text-align: center;
+/** Machine Wins */
+function uniWins(userChoice, randomChoice) {
+  randomScore++;
+  runRandomScore++;
+  userScoreSpan.innerHTML = userScore;
+  randomScoreSpan.innerHTML = randomScore;
+  resultP.innerHTML = `Universe chooses: <br><br> ${(randomChoice)}<br><br> You lose!`;
+}
+
+/** Draw */
+function draw(userChoice, randomChoice) {
+  randomScore++;
+  userScore++;
+  runRandomScore++;
+  runUserScore++;
+  userScoreSpan.innerHTML = userScore;
+  randomScoreSpan.innerHTML = randomScore;
+  resultP.innerHTML = `Universe chooses: <br><br> ${(randomChoice)} <br><br> It's a draw, have another round!`;
+}
+
+/** Game */
+function game(userChoice) {
+  const randomChoice = getrandomChoice();
+  switch (userChoice + randomChoice) {
+    case "rockscissors":
+    case "rocklizard":
+    case "paperrock":
+    case "paperspock":
+    case "lizardpaper":
+    case "lizardspock":
+    case "spockscissors":
+    case "spockrock":
+    case "scissorslizard":
+    case "scissorspaper":
+      userWins(userChoice, randomChoice);
+      break;
+    case "rockpaper":
+    case "rockspock":
+    case "paperlizard":
+    case "paperscissors":
+    case "lizardscissors":
+    case "lizardrock":
+    case "spockpaper":
+    case "spocklizard":
+    case "scissorsspock":
+    case "scissorsrock":
+      uniWins(userChoice, randomChoice);
+      break;
+    case "rockrock":
+    case "paperpaper":
+    case "scissorsscissors":
+    case "spockspock":
+    case "lizardlizard":
+      draw(userChoice, randomChoice);
+      break;
+
+  }
+}
+function calculateCorrectAnswer() {
+
+  let operand1 = parseInt(document.getElementById('operand1').innerText);
+  let operand2 = parseInt(document.getElementById('operand2').innerText);
+  let operator = document.getElementById("operator").innerText;
+
+  if (operator === "+") {
+      return [operand1 + operand2, "addition"];
+  } else if (operator === "x") {
+      return [operand1 * operand2, "multiply"];
+  } else if (operator === "-") {
+      return [operand1 - operand2, "subtract"];
+  } else {
+      alert(`Unimplemented operator ${operator}`);
+      throw `Unimplemented operator ${operator}. Aborting!`;
   }
 
-p,
-h2,
-h3 {
-    text-align: center;
-    color: white;
-}
-
-/** Game Section **/
-.game {
-    padding: 15px;
-    margin: 10px;
-    background-color: #9fbbbb;
-    text-align: center;
-}
-
-/** Header **/
-.tagline {
-    color: black;
-    text-align: center;
-    font-size: x-large;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
-.header-label {
-    font-size: larger;
-    font-weight: bold;
+
+/** Result Feedback */   
+function feed(randomChoice) {
+  document.querySelector(symbolP).textContent =  
+  
+  if (randomChoice === "rock") {
+    symbolP.innerHTML = "Rocks";
+  } else if (randomChoice === "paper") { 
+    symbolP.innerHTML = "Paper";
+  } else if (randomChoice === "scissors") { 
+    symbolP.innerHTML = "Scissors";
+  } else if (randomChoice === "spock") { 
+    symbolP.innerHTML = "Spock";
+  } else if (randomChoice === "lizard") { 
+    symbolP.innerHTML = "Lizard";
+  } else {
+  symbolP.innerHTML = "Ask for advice from a trusted source!";
+  }
 }
+  
 
 
-.first-name {
-    background-color: #546e6e;
-    border: 5px #546e6e;
-    border-radius: 10%;
-    padding: 15px;
-    width: 40%;
-    height: max-content;
-    color: white;
-    text-align: left;
-    font-size: larger;
-    font-weight: bold;
+/** Listener Player Buttons */
+function listener() {
+  rockDiv.addEventListener('click', function () {
+    game("rock");
+  });
+  paperDiv.addEventListener('click', function () {
+    game("paper");  
+  });
+  scissorsDiv.addEventListener('click', function () {
+    game("scissors");
+  });
+  spockDiv.addEventListener('click', function () {
+    game("spock");
+  });
+  lizardDiv.addEventListener('click', function () {
+    game("lizard");
+  });
 }
 
-.question-input {
-    background-color: #546e6e;
-    border: 5px #546e6e;
-    border-radius: 10%;
-    padding: 15px;
-    width: 70%;
-    height: max-content;
-    color: white;
-    text-align: left;
-    font-size: medium;
-    font-weight: bold;
-}
+listener();
 
-/** Game Board **/
-.instruction {
-    padding: 20px 30px;
-    margin: 25px auto;
-    border: 5px solid white;
-    border-radius: 5px;
-    background-color: #7d7f96;
-    width: 420px;
-    text-align: center;
-    font-size: medium;
-    color: white;
-    position: relative;
-}
+/** Feedback Report */
+let saveCountHome;
+let saveCountGuest;
+let domHome = document.getElementById("home--count")
+let domGuest = document.getElementById("guest--count")
 
-.options {
-    margin-top: 40px;
-}
+function saveClick() {
+  saveCountHome = runUserScore + " -- "
+  domHome.textContent += saveCountHome;
+  scoreUser.innerHTML = 0;
+  scoreUni.innerHTML = 0;
 
-.option {
-    background-color: #546e6e;
-    border: 5px #102929;
-    border-radius: 40%;
-    padding: 15px;
-    margin: 0 25px;
-    display: inline-block;
-    font-family: Arial, Helvetica, sans-serif;
-    transition: 0.5s ease;
-}
-
-.option:hover {
-    background: blue;
-}
-
-.choice {
-    color: white;
-}
-
-/** Score Board Section */
-.scoreSection {
-    padding: 20px 30px;
-    margin: 25px auto;
-    border: 5px solid white;
-    border-radius: 5px;
-    background-color: #7d7f96;
-    width: 220px;
-    text-align: center;
-    font-size: 35px;
-    color: white;
-    position: relative;
-}
-
-.badge {
-    padding: 5px 15px;
-    background-color: #a01871;
-    font-size: 15px;
-    color: white;
-}
-
-#labelUser {
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 110px;
-    left: -5px;
-}
-
-#labelUni {
-    position: absolute;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 110px;
-    right: -5px;
-}
-
-.result {
-    background-color: #a01871;
-    padding: 5px;
-    margin:0;
-    font-size: xx-large;
-}
-
-.scoreFeedback{
-padding: 20px 30px;
-    margin: 25px auto;
-    border: 5px solid white;
-    border-radius: 5px;
-    background-color: #7d7f96;
-    width: 320px;
-    text-align: center;
-    font-size: 20px;
-    color: white;
-    position: relative;
-}
-.save--btn{
-margin: 20px 30px 5px;
-    padding: 15px;
-    border-radius: 40%;
-    border-style: outset;
-    background-color: #546e6e;
-    border: 5px #102929;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-}
-
-.save--btn:hover {
-    background:blue;
-}
-
-/* Reset Section */
-.reset {
-    margin: 20px 30px 5px;
-    padding: 15px;
-    border-radius: 40%;
-    border-style: outset;
-    background-color: #546e6e;
-    border: 5px #102929;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: white;
-}
-
-.reset:hover {
-    background: blue;
-}
-
-/* Footer */
-footer {
-    padding: 5px;
-    margin: 25px;
-    background: white;
-    text-align: center;
-    color: black;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-weight: bold;
-}
-
-.disclaimer {
-    font-size: larger;
+  saveCountGuest = runRandomScore + " -- "
+  domGuest.textContent += saveCountGuest;
 }
