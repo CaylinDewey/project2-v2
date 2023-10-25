@@ -3,7 +3,6 @@ const paperDiv = document.getElementById("paper");
 const scissorsDiv = document.getElementById("scissors");
 const spockDiv = document.getElementById("spock");
 const lizardDiv = document.getElementById("lizard");
-const symbolP = document.querySelector(".symbol > p");
 const resultP = document.querySelector(".result > p");
 const userScoreSpan = document.getElementById("scoreUser");
 const randomScoreSpan = document.getElementById("scoreUni");
@@ -25,7 +24,7 @@ function userWins(userChoice, randomChoice) {
   runUserScore++;
   userScoreSpan.innerHTML = userScore;
   randomScoreSpan.innerHTML = randomScore;
-  resultP.innerHTML = `Universe chooses:  <br><br> ${(randomChoice)} <br><br> You win!!!`;
+  resultP.innerHTML = `User chooses: <br> ${(userChoice)} Universe chooses:  <br> ${(randomChoice)} <br><br> You win!!!`;
 }
 
 /** Machine Wins */
@@ -34,7 +33,7 @@ function uniWins(userChoice, randomChoice) {
   runRandomScore++;
   userScoreSpan.innerHTML = userScore;
   randomScoreSpan.innerHTML = randomScore;
-  resultP.innerHTML = `Universe chooses: <br><br> ${(randomChoice)}<br><br> You lose!`;
+  resultP.innerHTML = `User chooses: <br> ${(userChoice)} Universe chooses:  <br> ${(randomChoice)}<br><br> You lose!`;
 }
 
 /** Draw */
@@ -45,7 +44,7 @@ function draw(userChoice, randomChoice) {
   runUserScore++;
   userScoreSpan.innerHTML = userScore;
   randomScoreSpan.innerHTML = randomScore;
-  resultP.innerHTML = `Universe chooses: <br><br> ${(randomChoice)} <br><br> It's a draw, have another round!`;
+  resultP.innerHTML = `User chooses: <br> ${(userChoice)} Universe chooses:  <br> ${(randomChoice)} <br><br> It's a draw, have another round!`;
 }
 
 /** Game */
@@ -86,47 +85,6 @@ function game(userChoice) {
 
   }
 }
-function calculateCorrectAnswer() {
-
-  let operand1 = parseInt(document.getElementById('operand1').innerText);
-  let operand2 = parseInt(document.getElementById('operand2').innerText);
-  let operator = document.getElementById("operator").innerText;
-
-  if (operator === "+") {
-      return [operand1 + operand2, "addition"];
-  } else if (operator === "x") {
-      return [operand1 * operand2, "multiply"];
-  } else if (operator === "-") {
-      return [operand1 - operand2, "subtract"];
-  } else {
-      alert(`Unimplemented operator ${operator}`);
-      throw `Unimplemented operator ${operator}. Aborting!`;
-  }
-
-}
-
-
-
-/** Result Feedback */   
-function feed(randomChoice) {
-  document.querySelector(symbolP).textContent =  
-  
-  if (randomChoice === "rock") {
-    symbolP.innerHTML = "Rocks";
-  } else if (randomChoice === "paper") { 
-    symbolP.innerHTML = "Paper";
-  } else if (randomChoice === "scissors") { 
-    symbolP.innerHTML = "Scissors";
-  } else if (randomChoice === "spock") { 
-    symbolP.innerHTML = "Spock";
-  } else if (randomChoice === "lizard") { 
-    symbolP.innerHTML = "Lizard";
-  } else {
-  symbolP.innerHTML = "Ask for advice from a trusted source!";
-  }
-}
-  
-
 
 /** Listener Player Buttons */
 function listener() {
