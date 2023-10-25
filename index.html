@@ -26,15 +26,66 @@
     <script src="assets/script/index.js" defer></script>
 </head>
 <body>
-    <!-- Game Board -->
-    
-    <!-- Score Board -->
+     <!-- Game board -->
+     <div class="game">
+        <div>
+            <div class="instruction">
+                <h2>Make your selection:</h2>
+            </div>
+            <div class="options">
+                <div id="rock" class="option">
+                    <p class="choice">✊<br>Rock<br><br></p>
+                </div>
+                <div id="paper" class="option">
+                    <p class="choice">🖐️<br>Paper<br><br></p>
+                </div>
+                <div id="scissors" class="option">
+                    <p class="choice">✌🏻<br>Scissors<br><br></p>
+                </div>
+                <div id="spock" class="option">
+                    <p class="choice">🖖<br>Spock<br><br></p>
+                </div>
+                <div id="lizard" class="option" a>
+                    <p class="choice">🦎<br>Lizard<br><br></p>
+                </div>
+            </div>
+        </div>
 
-    <!-- Score Report -->
+        <!-- Score Board -->
+        <div class="scoreSection">
+            <h3>Score</h3>
+            <span id="scoreUser">0</span> : <span id="scoreUni">0</span>
+            <div id="labelUser" class="badge">Player</div>
+            <div id="labelUni" class="badge">Universe</div>
+        </div>
+        <div class="instruction">
+            <div class="symbol">
+                <p>Universal Choice</p>
+            </div>
+            <div class="result">
+                <p>The highest score wins!</p>
+            </div>
+        </div>
+        <!-- Score Report -->
+        <div class="scoreFeedback">
 
-    <!-- Reset Section -->
+            <button class="save--btn" onclick="saveClick()">SAVE THE SCORES</button>
+            <p id="home--count" onclick="homeCount">Wins : </p>
+            <p id="guest--count" onclick="guestCount">Losses : </p>
+        </div>
 
+
+        <!-- Reset Section -->
+        <div id="reset">
+            <button type="button" onclick="location.reload()" class="reset">RESET
+            </button>
+        </div>
+
+    </div>
     <!-- Footer -->
+    <footer>
+        <small>© Copyright by: Caylin Dewey</small>
+    </footer>
 </body>
 <footer>
 
