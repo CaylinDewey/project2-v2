@@ -17,10 +17,11 @@ header {
     text-align: center;
 }
 
-h1, {
-    color: black;
-    text-align: center;
-  }
+h1,
+{
+color: black;
+text-align: center;
+}
 
 p,
 h2,
@@ -29,11 +30,12 @@ h3 {
     color: white;
 }
 
-.rules{
+.rules {
     padding: 15px;
     margin: 10px;
     text-align: center;
 }
+
 .game {
     padding: 15px;
     margin: 10px;
@@ -46,39 +48,12 @@ h3 {
     color: black;
     text-align: center;
     font-size: x-large;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 .header-label {
     font-size: larger;
-    font-weight: bold;
-}
-
-
-.first-name {
-    background-color: #546e6e;
-    border: 5px #546e6e;
-    border-radius: 10%;
-    padding: 15px;
-    width: 40%;
-    height: max-content;
-    color: white;
-    text-align: left;
-    font-size: larger;
-    font-weight: bold;
-}
-
-.question-input {
-    background-color: #546e6e;
-    border: 5px #546e6e;
-    border-radius: 10%;
-    padding: 15px;
-    width: 70%;
-    height: max-content;
-    color: white;
-    text-align: left;
-    font-size: medium;
     font-weight: bold;
 }
 
@@ -89,9 +64,9 @@ h3 {
     border: 5px solid white;
     border-radius: 5px;
     background-color: #7d7f96;
-    width: 420px;
+    width: 320px;
     text-align: center;
-    font-size: medium;
+    font-size: 20px;
     color: white;
     position: relative;
 }
@@ -157,12 +132,12 @@ h3 {
 .result {
     background-color: #a01871;
     padding: 5px;
-    margin:0;
+    margin: 0;
     font-size: xx-large;
 }
 
-.scoreFeedback{
-padding: 20px 30px;
+.scoreFeedback {
+    padding: 20px 30px;
     margin: 25px auto;
     border: 5px solid white;
     border-radius: 5px;
@@ -173,8 +148,9 @@ padding: 20px 30px;
     color: white;
     position: relative;
 }
-.save--btn{
-margin: 20px 30px 5px;
+
+.save--btn {
+    margin: 20px 30px 5px;
     padding: 15px;
     border-radius: 40%;
     border-style: outset;
@@ -185,7 +161,7 @@ margin: 20px 30px 5px;
 }
 
 .save--btn:hover {
-    background:blue;
+    background: blue;
 }
 
 /* Reset Section */

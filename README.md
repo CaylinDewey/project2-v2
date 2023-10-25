@@ -1,4 +1,4 @@
-![logo](assets/images/favicon/android-chrome-192x192.png) 
+![logo](assets/images/rules/rulesWikipedia.png) 
 # Game of Rock Paper Scissors Spock Lizard
 This game was initially concieved in the popular American series "Big Bang Theory".  
 
@@ -6,7 +6,7 @@ The site is responsive to viewing on mobiles, tablets, laptops, and desktops.
 
 ![Responsive](assets/images/readme/am-i-responsive.png)
 
-Please view the Decision Helper live project [here](https://caylindewey.github.io/project2-v1/).
+Please view the Decision Helper live project [here](https://caylindewey.github.io/project2-v2/).
 
 - - -
 
