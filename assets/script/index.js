@@ -118,6 +118,8 @@ function saveClick() {
   domHome.textContent += saveCountHome;
   scoreUser.innerHTML = 0;
   scoreUni.innerHTML = 0;
+  randomScore = 0;
+  userScore = 0;
 
   saveCountGuest = runRandomScore + " -- ";
   domGuest.textContent += saveCountGuest;

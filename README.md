@@ -110,14 +110,13 @@ Please view the game live project [here](https://caylindewey.github.io/project2-
 
 #### Individual Game Scores with tally
 - Transparency is enhanced by the clear way the scoring is awarded.
-- Once a score is saved the tally is displayed for the new game to commence. 
 - It is easily checked against the scoreboard since it only increases in increments of 1.
-- This running total ensures that both individual game scores and a running total is made available to the user (generally used for drinking, volunteer and dare games).
 
 ![Game Score](assets/images/readme/display-clear-score-tally.png)
 
 #### The Scoreboard
-- The scoreboard keeps tally of the scores after each save. The results still display showing who was awarded the score. 
+- The scoreboard keeps tally of the scores after each save. 
+- The feedback game results still display showing who was awarded the score. 
 - With this save function it is easy to see when and how the scores increase and what the latest scores are. 
 
 ![Scoreboard](assets/images/readme/display-clear-scoreboard.png)
