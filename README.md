@@ -1,8 +1,7 @@
 ![logo](assets/images/rules/rulesWikipedia.png) 
-# Game of Rock Paper Scissors Spock Lizard
-This game was mentioned in both the popular American series "Star Trek" and "Big Bang Theory".  
-
-The site is responsive to viewing on mobiles, tablets, laptops, and desktops.  
+# Game of Rock Paper Scissors Spock Lizard 
+## Introduction (The What, Why, and Who)
+This game is mentioned in both the popular American series "Star Trek" and "Big Bang Theory".  It evolved from rock, paper, scissors with two extra elements. It is popular among fans of these series. Fans of these series can now play this game online whenever they like.
 
 ![Responsive](assets/images/readme/responsiveness.png)
 
@@ -149,6 +148,7 @@ Please view the game live project [here](https://caylindewey.github.io/project2-
 - A multiple player option could be provided.
 - Adverts for these services could also generate income.
 - Pages with information about the origins of the game could lure users.  A spin off from this could be a sister quiz game.
+- Social media buttons and feeds can promote content and increase engagement.
 
 ## Design
 ### Color Scheme
@@ -179,22 +179,22 @@ The following palette was selected from [My Color Space](https://mycolor.space/)
 ## Testing
 ### Issues and Bugs
 -  Initially a decision maker game was conceptualised but it proved too complicated to pull together, since it needed form reset functions and scoreboards.
-- Valuable feedback from the mentor and peers, made it clear that there may be issues about users not actually understanding the game.  It was decided to convert current work to a game that would be well recognised and understood. 
+- Valuable feedback from the mentor and peers, made it clear that there may be issues about users not actually understanding the game or what it should be used for.  It was decided to convert current work to a game that would be well recognised and understood. 
 - Simpler features could be used with manageable code that responds without too many complications. 
-- The bulk of the code was converted to a game of rock, paper, scissors, spock and lizard. 
 - A new repository was used so that none of the old code and text was carried through to the game.
+- The bulk of the html, js, css and readme file was converted to a game of rock, paper, scissors, spock and lizard. It was much easier to test and responded well from the onset.
 
 ### Validator Results 
-- The W3C HTML Validator were used and Index.html passed the test  [W3C HTML Validtor](https://validator.w3.org/).
+- The W3C HTML Validator were used and Index.html passed the test after a few tags were fixed.  [W3C HTML Validtor](https://validator.w3.org/).
 
 ![Page validation result](/assets/images/readme/validator-html-results.png)
 
-- The W3C CSS Validator was used and Style.css passed the test [W3C CSS Validtor](https://jigsaw.w3.org/css-validator/).
+- The W3C CSS Validator was used and Style.css passed the test after an unused style section for a div was removed. [W3C CSS Validtor](https://jigsaw.w3.org/css-validator/).
 
 ![CSS validation result](/assets/images/readme/validator-css-results.png)
 
 ### Jshint Testing
-- A few erros were found but have been fixed.
+- A few errors were found with variables that were not being used but have been removed succesfully and no errors are found.
 
 ![Jshint result](/assets/images/readme/jshint-test-results.png)
 
@@ -246,9 +246,10 @@ Github was used to deploy this site.  The steps are as follows:
 - [Code Institute Readme Template Tutorial](Code-Institute-Solutions/readme-template) 
 - [Code Institute Readme from Thomas Tomo](https://github.com/Thomas-Tomo/Lunar-Escape) 
 - [Code Institue Readme from Kera Cudmore](https://github.com/kera-cudmore)
-- [freeCodeCamp Tutorial](https://www.youtube.com) was used for examples and learning.
-- [Dave Gray](https://www.youtube.com/@DaveGrayTeachesCode) tutorials were viewed to assist.
+- [freeCodeCamp Tutorial](https://www.youtube.com) was used for examples of code and learning.
+- [Dave Gray](https://www.youtube.com/@DaveGrayTeachesCode) tutorials were viewed to assist with understanding Java Script.
 - [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified) tutorials were viewed to assist with the project.
+- [Ania Kubow](https://www.youtube.com/@AniaKubow) was used to learn about Javascript
 - [Favicon](https://favicon.io/favicon-converter/) was used to create the favicon
 - [Figjam](https://www.figma.com/) was used for the wireframe
 - [Font Awesome](https://fontawesome.com/v4/icons/) provided all icons 
