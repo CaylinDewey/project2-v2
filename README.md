@@ -215,10 +215,18 @@ Random URL Load | Redirect User | Redirection executed with 404 page | Test Pass
 Github was used to deploy this site.  The steps are as follows:
 1. Log into the [Github site](https://github.com/)
 2. Pull up the repository for [project 2](https://github.com/CaylinDewey/project2-v2)
-3. Select the settings link, then the pages link.
-4. In the source section choose 'main' from the dropdown menu.  
-5. Select the 'root' from the drop menu and 'save'.
-6. The URL that is displayed should have your live Github pages site. 
+3. Select the settings link on the menu.
+![Deploy Settings](assets/images/readme/deploy-settings.png)
+
+4. Select the the pages link on the vertical menu.
+![Deploy Link](assets/images/readme/deploy-pages.png)
+
+5. In the source section choose 'main' from the dropdown menu.  
+6. Select the 'root' from the drop menu and 'save'.
+![Deploy Source](assets/images/readme/deploy-root-save.png)
+
+7. The URL that is displayed should have your live Github pages site. 
+![Deploy Site](assets/images/readme/deploy-site.png)
 
 ### How to Fork
 1. Log into the [Github site](https://github.com/)
