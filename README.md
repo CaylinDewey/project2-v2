@@ -4,13 +4,14 @@ This game was initially concieved in the popular American series "Big Bang Theor
 
 The site is responsive to viewing on mobiles, tablets, laptops, and desktops.  
 
-![Responsive](assets/images/readme/am-i-responsive.png)
+![Responsive](assets/images/readme/responsiveness.png)
 
-Please view the Decision Helper live project [here](https://caylindewey.github.io/project2-v2/).
+Please view the game live project [here](https://caylindewey.github.io/project2-v2/).
 
 - - -
 
 # Table of Contents
+
 ## [User Experience](#user-experience-1)
 ### [User Stories UX](#user-stories-ux-1)
 #### [First Time Visitor Goals](#first-time-visitor-goals-1) 
@@ -24,53 +25,65 @@ Please view the Decision Helper live project [here](https://caylindewey.github.i
 #### [Footer](#footer-1)
 #### [Main Headings](#main-headings-1)
 ### [Features Left to Implement](#features-left-to-implement-1)
+
 ## [Design](#design-1)
 ### [Color Scheme](#color-scheme-1)
 ### [Typography](#typography-1)
 ### [Wireframes](#wireframes-1)
+
 ## [Technologies Used](#technologies-used-1)
+
 ## [Frameworks, Libraries and Programs](#frameworks-libraries-and-programs-1)
+
 ## [Testing](#testing-1)
 ### [Issues and Bugs](#issues-and-bugs-1)
 ### [Validator Results](#validator-results-1)
 ### [Jshint Testing](#jshint-testing-1)
 ### [Manual Testing](#manual-testing-1)
-### [WAVE Testing](#w)
-### [Lighthouse Testing](#lighthouse-testing-1)
+
 ## [Deployment and Local Development](#deployment-and-local-development-1)
 #### [How to Deploy](#how-to-deploy-1)
 #### [How to Fork](#how-to-fork-1)
 #### [How to Clone](#how-to-clone-1)
+
 ## [Credits](#credits-1)
 ### [Code and Media](#code--media-1)
 ### [Content](#content-1)
+
 ## [Acknowledgements](#acknowledgements-1)
 
-# Decision Helper
+# Game of Rock Paper Scissors Spock Lizard
 ## User Experience
-- A <b>user-centered</b> approach was taken with the design of a lean, simple and elegant site.
-- The user should be able to start the game, <i><b>filling in a name and then the question</i></b> within a short period of time.
-- The site should be <b>future-proofed</b> to accomodate <b>scalability</b> but keep the navigation of the site consistent for the user - regardless of growth and expansion.  Future ideas are to include are pages with more elaborate decision making process. Theme-related advertising that can generate income can also be considered.
+- A <b>user-centered</b> approach was taken with the design of an interactive sight for this game.  
+- The user should be able to start the game, <i><b>and save scores on a scoreboard</i></b> within a short period of time.
+- The site should be <b>future-proofed</b> to accomodate <b>scalability</b> but keep the navigation of the site consistent for the user - regardless of growth and expansion.  Future ideas are to include are pages with information about the origins of the game and space for more players to play with one another.
 
 
 ### User Stories UX
 #### First Time Visitor Goals
-- As a user, I want to be able to start this game quickly and generate a score for my decision easily. The decision should include a margin of randomness. The input of the user name and question is optional for this reason.
+- As a user, I want to be able to start this game quickly and generate a score. The score should be saved on a scoreboard for future viewing.  The scores should be added until I hit the rest button.
+
 
 #### Returning Visitor Goals
 - The same basic structure will allow for consistency and predictability for returning users.
-- Users wuold be able to prepare better for decision making with each use but would have to return to this site for the random feedback.
+- The rules are visible, generic and easy to learn making the game accessible and relevant.
 
 #### Frequent Visitor Goals
 - The user can easily access this site for decisions both big and small providing they want the random feedback in their decision.
 - The user will be more mindfull of feelings with more use promoting emotional wellness.
 
 ## Features
-- The site is responsive on all device sizes.
+- The site is responsive on all device sizes. It is easy to navigate - you simply work your way top-down through the options.
 
 ### Existing Features
 #### Personalisation
-- The user fills in the name and the question which adds a personalised element to the service.
+- The rules are generic and easy to follow, making the game accessible globally. 
+- The buttons are highly visible - all in the same color. This makes playing easy. 
+- The feedback gives the user option as well as the universe option - giving transparency on how the score was awarded.
+- The buttons have a blue hue to show use.
+- The scoreboard keeps tally of the scores after each save.
+- The reset button allows for a new set of scores to be stored.
+- The user can store as many sets of scores as is needed. 
 
 ![Personalised](assets/images/readme/personalised-site.png)
 #### Clear Buttons
@@ -200,8 +213,9 @@ Github was used to deploy this site.  The steps are as follows:
 - [freeCodeCamp Tutorial](https://www.youtube.com) was used for examples and learning.
 - [Favicon](https://favicon.io/favicon-converter/) was used to create the favicon
 - [Figjam](https://www.figma.com/) was used for the wireframe
-- [Font Awesome](https://fontawesome.com/v4/icons/) was used for all icons 
-- [Emoji](https://www.emojipedia.org) was used for hand emojis
+- [Font Awesome](https://fontawesome.com/v4/icons/) provided all icons 
+- [Emoji](https://www.emojipedia.org) provided hand emojis
+- [Wikipedia Game Rules](https://en.wikipedia.org/wiki/File:Rock_paper_scissors_lizard_spock.png) is the source for rules
 
 ### Content
 - All content was written by Caylin Dewey
