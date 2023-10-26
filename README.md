@@ -1,6 +1,6 @@
 ![logo](assets/images/rules/rulesWikipedia.png) 
 # Game of Rock Paper Scissors Spock Lizard
-This game was initially concieved in the popular American series "Big Bang Theory".  
+This game was mentioned in both the popular American series "Star Trek" and "Big Bang Theory".  
 
 The site is responsive to viewing on mobiles, tablets, laptops, and desktops.  
 
@@ -56,16 +56,20 @@ Please view the game live project [here](https://caylindewey.github.io/project2-
 ## User Experience
 - A <b>user-centered</b> approach was taken with the design of an interactive sight for this game.  
 - The user should be able to start the game, <i><b>and save scores on a scoreboard</i></b> within a short period of time.
-- The site should be <b>future-proofed</b> to accomodate <b>scalability</b> but keep the navigation of the site consistent for the user - regardless of growth and expansion.  Future ideas are to include are pages with information about the origins of the game and space for more players to play with one another.
+- The site should be <b>future-proofed</b> to accomodate <b>scalability</b> but keep the navigation of the site consistent for the user - regardless of growth and expansion.  
 
 
 ### User Stories UX
 #### First Time Visitor Goals
-- As a user, I want to be able to start this game quickly and generate a score. The score should be saved on a scoreboard for future viewing.  The scores should be added until I hit the rest button.
-
+- As a user, I want to be able to start this game quickly and generate a score. 
+- I want to be able to clearly see who won and why. 
+- The score should be saved on a scoreboard if I choose.  
+- The scores should be tallied up for me, until I hit the reset button.
+- I want to have access to the rules so that I can understand the outcomes.
 
 #### Returning Visitor Goals
 - The same basic structure will allow for consistency and predictability for returning users.
+- The rules are on display with each game making indirect visibility key to learning the rules. This in-turn should generate investement for the user.
 - The rules are visible, generic and easy to learn making the game accessible and relevant.
 
 #### Frequent Visitor Goals
@@ -73,39 +77,59 @@ Please view the game live project [here](https://caylindewey.github.io/project2-
 - The user will be more mindfull of feelings with more use promoting emotional wellness.
 
 ## Features
-- The site is responsive on all device sizes. It is easy to navigate - you simply work your way top-down through the options.
+- The site is responsive on all device sizes. 
 
 ### Existing Features
-#### Personalisation
-- The rules are generic and easy to follow, making the game accessible globally. 
-- The buttons are highly visible - all in the same color. This makes playing easy. 
-- The feedback gives the user option as well as the universe option - giving transparency on how the score was awarded.
-- The buttons have a blue hue to show use.
+#### Easy Use
+- The rules are visually indicated, giving a quick clear explanation at a glance.
+- The rule resource is generic and easy to follow, making the game accessible globally to all genres and cultures. 
+![Rules Display](assets/images/readme/wikipedia-rules-clear-display.png)
+- It is easy to navigate - you simply work your way top-down through the options.
+- The feedback section gives the user the option that was chosen, as well as the universe option that randomly was selected.  This makes it easy to check against the rules.
+- Both the rules and the feedback have words that indicate the choices for easy referencing.
+
+![Transparent Gaming](assets/images/readme/display-clear-score-outcome.png)
+
+- Transparency is enhanced by clear way the scoring is awarded and can be stored.
+- A running total ensures that both individual game scores and a running total is made available to the user (generally used for drinking, volunteer and dare games).
+
+![Game Score](assets/images/readme/display-clear-score-tally.png)
+
 - The scoreboard keeps tally of the scores after each save.
+
+![Scoreboard](assets/images/readme/display-clear-scoreboard.png)
+
 - The reset button allows for a new set of scores to be stored.
-- The user can store as many sets of scores as is needed. 
+- The user can store as many sets of scores as is needed.
 
-![Personalised](assets/images/readme/personalised-site.png)
+![Easy Navigation](assets/images/readme/display-reset-feature.png)
+
+- A 404 page was added to ensure that users could navigate back to the main page if they inadvertently landed somewhere else.
+
+![Error-404](assets/images/readme/error-404-page.png)
+
+
 #### Clear Buttons
-- The choices to make a decision is simple and clear. The user is encouraged to hit the buttons for every concern they have about the decision.
+- The buttons are highly visible - all in the same color. This makes playing predictable and easy. 
+- The buttons changes color to blue, to show hovering and use.
 
-![Clear Buttons Desktop](assets/images/readme/clear-buttons-desktop.png)
+![Clear Buttons Desktop](assets/images/readme/display-blue-button.png)
 
 On the mobile device the buttons are still easy to use. 
 
-![Clear Buttons Mobile](assets/images/readme/clear-buttons-mobile.png)
+![Clear Buttons Mobile](assets/images/readme//display-clear-mobile.png)
 
 #### Footer
-- Disclaimer and copyright information prevents legal protection.
-
-![Disclaimer](assets/images/readme/disclaimer.png)
+- The footer displays copyright information.
 
 #### Main Headings
-The headings are clear and concise describing exactly what to do next. This avoids the need for rules and further explanations.
+- The headings are clear and concise avoiding clutter.
+- A wikipedia rule guide is provided, so also giving the user a reference for further information of the game.
 
 ### Features Left to Implement
-- In future links to professional services, decision tutorials, and personal growth courses, could be included on the site. 
+- A multiple player option could be provided.
 - Adverts for these services could also generate income.
+- Pages with information about the origins of the game could lure users.  A spin off from this could be a sister quiz game.
 
 ## Design
 ### Color Scheme
@@ -126,18 +150,20 @@ The following palette was selected from [My Color Space](https://mycolor.space/)
 
 ## Technologies Used
 ### Language
-- HTML, CSS and Javascript was used
+- HTML, CSS and Javascript was used.
 
 ## Frameworks, Libraries and Programs
-- [Git](https://git-scm.com/) was used for version control
-- [Github](https://github.com/) wa used to save and store files
-- [Lightshot](https://app.prntscr.com/en/index.html) was used for screendumps
+- [Git](https://git-scm.com/) was used for version control.
+- [Github](https://github.com/) wa used to save and store files.
+- [Lightshot](https://app.prntscr.com/en/index.html) was used for screendumps.
 
 ## Testing
 ### Issues and Bugs
--  The web accessibility evaluation tool showed many tag and contrasting issues which had to be fixed https://wave.webaim.org/report#/https://caylindewey.github.io/project2-v1/. All errors are fixed.
-
-- The reset function was initially triggered from the js function. It was moved to the HTML funtion after a jshint error was found. All errors are fixed.
+-  Initially a decision maker game was conceptualised but it proved too complicated to pull together, since it needed form reset functions and scoreboards.
+- Valuable feedback from the mentor and peers, made it clear that there may be issues about users not actually understanding the game.  It was decided to convert current work to a game that would be well recognised and understood. 
+- Simpler features could be used with manageable code that responds without too many complications. 
+- The bulk of the code was converted to a game of rock, paper, scissors, spock and lizard. 
+- A new repository was used so that none of the old code and text was carried through to the game.
 
 ### Validator Results 
 - The W3C HTML Validator were used and Index.html passed the test  [W3C HTML Validtor](https://validator.w3.org/).
