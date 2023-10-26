@@ -111,17 +111,18 @@ The headings are clear and concise describing exactly what to do next. This avoi
 ### Color Scheme
 The following palette was selected from [My Color Space](https://mycolor.space/)
 
-![Color Palette](assets/images/readme/color-palette.png)
+![Color Palette](assets/images/readme/mycolor-palette.png)
 
 ### Typography
-- The Lato family of fonts was chosen from [Google Fonts](https://fonts.google.com) with sans-serif in case it doesn't import.
+- The Raleway family of fonts was chosen from [Google Fonts](https://fonts.google.com) with sans-serif in case it doesn't import.
 
 ### Wireframes
 - [FigmaJam](https://www.figma.com/) was used to create wireframes that will scale up easily for teamwork. 
-- The site has been designed with an "easy to take in" style focussed on avoiding decision fatigue and information overload. The underlined navigation items tells you where you are.  
+- The site has been designed with an "easy to take in" style.
 - Each stroke and click is efficient and intentional.
+- There is no clutter or unnecessary information.
 
-![Design](assets/images/readme/wireframe.png) 
+![Design](assets/images/readme/figma-wireframe-game.png) 
 
 ## Technologies Used
 ### Language
@@ -141,52 +142,34 @@ The following palette was selected from [My Color Space](https://mycolor.space/)
 ### Validator Results 
 - The W3C HTML Validator were used and Index.html passed the test  [W3C HTML Validtor](https://validator.w3.org/).
 
-![Page validation result](/assets/images/readme/validator-html-result.png)
+![Page validation result](/assets/images/readme/validator-html-results.png)
 
 - The W3C CSS Validator was used and Style.css passed the test [W3C CSS Validtor](https://jigsaw.w3.org/css-validator/).
 
-![CSS validation result](/assets/images/readme/validator-css-result.png)
+![CSS validation result](/assets/images/readme/validator-css-results.png)
 
 ### Jshint Testing
-- No errors were found.
+- A few erros were found but have been fixed.
 
-![Jshint result](/assets/images/readme/jshintResult.png)
+![Jshint result](/assets/images/readme/jshint-test-results.png)
 
 ### Manual Testing
 
 | Test | Expected Functionality | Actual Behavior | Test Result |
 | --- |---                   |---            |---|
-| Random URL Load | Redirect User | Redirection executed with 404 page | Test Passed |
 | Load on Browsers | Load successfully on Opera, Google Chrome, Microsoft Edge | Loaded successfully | Test Passed |
 | Responsive to Varied Devices using Chrome Dev Tools | Tested desktop, tablet iPad Air and Samsung Galaxy A33 | Response Good | Test Passed |
 | Buttons | All buttons responded as expected | Quick response and correct calculation | Test Passed |
-| Fields Input Range | Text and numbers required | Did not respond | Test Failed |
+Random URL Load | Redirect User | Redirection executed with 404 page | Test Passed |
 
-![Error-404](assets/images/readme/error-404.png)
-
-### Wave Testing (Web Accesibility Evaluation Tool)
-- A few tag and contrasting errors were corrected [WAVE](https://wave.webaim.org/) which improved the lighthouse scores.
-
-- Wave Testing Results were initially riddled with minor errors which have now been resolved.
-
-![Wave Result](assets/images/readme/wave-results.png)
-
-### Lighthouse Testing
-#### Results
-- Desktop Results were initially showing a low score on accesibility which have now been resolved.
-
-![Lighthouse Desktop Result](assets/images/readme/lighthouse-desktop-test.png)
-
-- Mobile Results were initially showing a low score on accesibility which have now been resolved.
-
-![Lighthouse Desktop Result](assets/images/readme/lighthouse-mobile-test.png)
+![Error-404](assets/images/readme/error-404-page.png)
 
 ## Deployment and Local Development
 
 ### How to Deploy 
 Github was used to deploy this site.  The steps are as follows:
 1. Log into the [Github site](https://github.com/)
-2. Pull up the repository for [Decision Helper](https://github.com/CaylinDewey/project2-v1)
+2. Pull up the repository for [project 2](https://github.com/CaylinDewey/project2-v2)
 3. Select the settings link, then the pages link.
 4. In the source section choose 'main' from the dropdown menu.  
 5. Select the 'root' from the drop menu and 'save'.
@@ -194,7 +177,7 @@ Github was used to deploy this site.  The steps are as follows:
 
 ### How to Fork
 1. Log into the [Github site](https://github.com/)
-2. Pull up the repository for [Decision Helper](https://github.com/CaylinDewey/project2-v1)
+2. Pull up the repository for [project2](https://github.com/CaylinDewey/project2-v2)
 3. Use to [fork button](assets/images/readme_github_fork.png) on the top right hand corner 
 
 ### How to Clone
@@ -211,6 +194,8 @@ Github was used to deploy this site.  The steps are as follows:
 - [Code Institute Readme from Thomas Tomo](https://github.com/Thomas-Tomo/Lunar-Escape) 
 - [Code Institue Readme from Kera Cudmore](https://github.com/kera-cudmore)
 - [freeCodeCamp Tutorial](https://www.youtube.com) was used for examples and learning.
+- [Dave Gray](https://www.youtube.com/@DaveGrayTeachesCode) tutorials were viewed to assist.
+- [Web Dev Simplified](https://www.youtube.com/c/WebDevSimplified) tutorials were viewed to assist with the project.
 - [Favicon](https://favicon.io/favicon-converter/) was used to create the favicon
 - [Figjam](https://www.figma.com/) was used for the wireframe
 - [Font Awesome](https://fontawesome.com/v4/icons/) provided all icons 
@@ -218,9 +203,9 @@ Github was used to deploy this site.  The steps are as follows:
 - [Wikipedia Game Rules](https://en.wikipedia.org/wiki/File:Rock_paper_scissors_lizard_spock.png) is the source for rules
 
 ### Content
-- All content was written by Caylin Dewey
+- All content was written by Caylin Dewey.
 
 ## Acknowledgements
 - My mentor,<b> Mitko Bachvarov</b> provided helpful feedback and advice.
 - <b>Code Institute </b> Slack community provided solutions and feedback.
-- <b>Code Institute </b> tutors were quick to respond to my problems and to assist me - all with very little fuss!
+- <b>Code Institute </b> tutors were quick to respond to my problems and to assist me.

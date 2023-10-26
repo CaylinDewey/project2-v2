@@ -106,19 +106,3 @@ function listener() {
 }
 
 listener();
-
-/** Feedback Report */
-let saveCountHome;
-let saveCountGuest;
-let domHome = document.getElementById("home--count")
-let domGuest = document.getElementById("guest--count")
-
-function saveClick() {
-  saveCountHome = runUserScore + " -- "
-  domHome.textContent += saveCountHome;
-  scoreUser.innerHTML = 0;
-  scoreUni.innerHTML = 0;
-
-  saveCountGuest = runRandomScore + " -- "
-  domGuest.textContent += saveCountGuest;
-}
