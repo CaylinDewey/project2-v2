@@ -20,10 +20,17 @@ Please view the game live project [here](https://caylindewey.github.io/project2-
 
 ## [Features](#features-1)
 ### [Existing Features](#existing-features-1)
-#### [Personalisation](#personalisation-1)
-#### [Clear Buttons](#clear-buttons-1)
-#### [Footer](#footer-1)
 #### [Main Headings](#main-headings-1)
+#### [Easy to Navigate](#easy-to-navigate-1)
+#### [Rules](#rules-1)
+#### [Feedback Section](#feedback-section-1)
+#### [Individual Game Score with Tally](#individual-game-scores-with-tally)
+#### [The Scoreboard](#the-scoreboard-1)
+#### [The Reset Button](#the-reset-button-1)
+#### [404 Page](#404-page-1)
+#### [Clear Buttons](#clear-buttons-1)
+#### [Footer with Copyright](#footer-1)
+
 ### [Features Left to Implement](#features-left-to-implement-1)
 
 ## [Design](#design-1)
@@ -58,56 +65,72 @@ Please view the game live project [here](https://caylindewey.github.io/project2-
 - The user should be able to start the game, <i><b>and save scores on a scoreboard</i></b> within a short period of time.
 - The site should be <b>future-proofed</b> to accomodate <b>scalability</b> but keep the navigation of the site consistent for the user - regardless of growth and expansion.  
 
-
 ### User Stories UX
 #### First Time Visitor Goals
 - As a user, I want to be able to start this game quickly and generate a score. 
 - I want to be able to clearly see who won and why. 
+- I want easy access to the rules, so that I can check how scores are awarded.
 - The score should be saved on a scoreboard if I choose.  
-- The scores should be tallied up for me, until I hit the reset button.
-- I want to have access to the rules so that I can understand the outcomes.
+- The scores should be tallied up for me.
+- I should be able to reset the game at any point.
 
 #### Returning Visitor Goals
 - The same basic structure will allow for consistency and predictability for returning users.
-- The rules are on display with each game making indirect visibility key to learning the rules. This in-turn should generate investement for the user.
+- The rules are on display with each game making indirect visibility key to learning the rules. This in-turn should generate indirectly toward the investement of the user.
 - The rules are visible, generic and easy to learn making the game accessible and relevant.
 
 #### Frequent Visitor Goals
-- The user can easily access this site for decisions both big and small providing they want the random feedback in their decision.
-- The user will be more mindfull of feelings with more use promoting emotional wellness.
+- An easy return to a familiar game is important.
+- The user can make use of the score board or not - the game can be played either way.
 
 ## Features
 - The site is responsive on all device sizes. 
+![Responsive Game](assets/images/readme/responsiveness.png)
 
 ### Existing Features
-#### Easy Use
-- The rules are visually indicated, giving a quick clear explanation at a glance.
-- The rule resource is generic and easy to follow, making the game accessible globally to all genres and cultures. 
-![Rules Display](assets/images/readme/wikipedia-rules-clear-display.png)
+#### Main Headings
+- The headings are clear and without clutter.
+
+#### Easy to Navigate
 - It is easy to navigate - you simply work your way top-down through the options.
-- The feedback section gives the user the option that was chosen, as well as the universe option that randomly was selected.  This makes it easy to check against the rules.
-- Both the rules and the feedback have words that indicate the choices for easy referencing.
-
-![Transparent Gaming](assets/images/readme/display-clear-score-outcome.png)
-
-- Transparency is enhanced by clear way the scoring is awarded and can be stored.
-- A running total ensures that both individual game scores and a running total is made available to the user (generally used for drinking, volunteer and dare games).
-
-![Game Score](assets/images/readme/display-clear-score-tally.png)
-
-- The scoreboard keeps tally of the scores after each save.
-
-![Scoreboard](assets/images/readme/display-clear-scoreboard.png)
-
-- The reset button allows for a new set of scores to be stored.
-- The user can store as many sets of scores as is needed.
 
 ![Easy Navigation](assets/images/readme/display-reset-feature.png)
 
+#### Rules
+- The rules are visually indicated, giving a quick clear explanation at a glance.
+- It can be accessed while playing by simply scrolling up - without losing scores or activating a new game.
+- The rule resource is generic and easy to follow, making the game accessible globally to all genres and cultures.
+
+![Rules Display](assets/images/readme/wikipedia-rules-clear-display.png)
+
+#### Feedback Section
+- The feedback section gives the user the option that was chosen, as well as the universe option that randomly was selected.  
+- Both the rules and the feedback have words that indicate the choices for easy referencing.
+
+![Feedback Section](assets/images/readme/display-clear-score-outcome.png)
+
+#### Individual Game Scores with tally
+- Transparency is enhanced by the clear way the scoring is awarded.
+- Once a score is saved the tally is displayed for the new game to commence. 
+- It is easily checked against the scoreboard since it only increases in increments of 1.
+- This running total ensures that both individual game scores and a running total is made available to the user (generally used for drinking, volunteer and dare games).
+
+![Game Score](assets/images/readme/display-clear-score-tally.png)
+
+#### The Scoreboard
+- The scoreboard keeps tally of the scores after each save. The results still display showing who was awarded the score. 
+- With this save function it is easy to see when and how the scores increase and what the latest scores are. 
+
+![Scoreboard](assets/images/readme/display-clear-scoreboard.png)
+
+#### The Reset Button
+- The reset button allows for a new set of scores to be stored.
+- The user can store as many sets of scores as is needed.
+
+#### 404 Page
 - A 404 page was added to ensure that users could navigate back to the main page if they inadvertently landed somewhere else.
 
 ![Error-404](assets/images/readme/error-404-page.png)
-
 
 #### Clear Buttons
 - The buttons are highly visible - all in the same color. This makes playing predictable and easy. 
@@ -115,16 +138,12 @@ Please view the game live project [here](https://caylindewey.github.io/project2-
 
 ![Clear Buttons Desktop](assets/images/readme/display-blue-button.png)
 
-On the mobile device the buttons are still easy to use. 
+- On the mobile device the buttons are still easy to use. 
 
 ![Clear Buttons Mobile](assets/images/readme//display-clear-mobile.png)
 
 #### Footer
 - The footer displays copyright information.
-
-#### Main Headings
-- The headings are clear and concise avoiding clutter.
-- A wikipedia rule guide is provided, so also giving the user a reference for further information of the game.
 
 ### Features Left to Implement
 - A multiple player option could be provided.
